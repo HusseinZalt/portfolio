@@ -46,6 +46,14 @@
     document.getElementById("lang").textContent = lang === "ar" ? "EN" : "عربي";
     renderGrid();
   }
+  var html = document.documentElement, themeBtn = document.getElementById("theme"), meta = document.querySelector('meta[name="theme-color"]');
+  function setTheme(t) {
+    if (t === "light") html.setAttribute("data-theme", "light"); else html.removeAttribute("data-theme");
+    if (meta) meta.setAttribute("content", t === "light" ? "#F3F0E8" : "#0D0D0F");
+    try { localStorage.setItem("hz-theme", t); } catch (e) {}
+  }
+  if (html.getAttribute("data-theme") === "light" && meta) meta.setAttribute("content", "#F3F0E8");
+  themeBtn.addEventListener("click", function () { setTheme(html.getAttribute("data-theme") === "light" ? "dark" : "light"); });
   document.getElementById("lang").addEventListener("click", function () {
     lang = lang === "ar" ? "en" : "ar";
     try { localStorage.setItem("hz-lang", lang); } catch (e) {}
