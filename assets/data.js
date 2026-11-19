@@ -264,6 +264,29 @@ window.PROJECTS = [
   ]
  },
  {
+  "id": "a-kibbeh",
+  "cat": "motion",
+  "title": {
+   "en": "Kibbeh",
+   "ar": "كبة"
+  },
+  "type": {
+   "en": "2D Illustrated Animation",
+   "ar": "أنيميشن 2D مرسوم"
+  },
+  "desc": {
+   "en": "Hand-built illustrated motion piece telling a food story.",
+   "ar": "موشن مرسوم بيحكي قصة أكلة."
+  },
+  "shape": "tall",
+  "dur": 14,
+  "tools": [
+   "Illustrator",
+   "After Effects",
+   "Premiere Pro"
+  ]
+ },
+ {
   "id": "c-verdi",
   "cat": "commercial",
   "title": {
@@ -691,29 +714,6 @@ window.PROJECTS = [
   "desc": {
    "en": "A mascot character brought to life.",
    "ar": "كاركتر للبراند صار حي."
-  },
-  "shape": "tall",
-  "dur": 14,
-  "tools": [
-   "Google Flow",
-   "After Effects",
-   "Premiere Pro"
-  ]
- },
- {
-  "id": "a-kibbeh",
-  "cat": "ai",
-  "title": {
-   "en": "Kibbeh",
-   "ar": "كبة"
-  },
-  "type": {
-   "en": "AI Illustration",
-   "ar": "رسم بالـAI"
-  },
-  "desc": {
-   "en": "Illustrated storytelling for a food brand.",
-   "ar": "قصة مرسومة لبراند أكل."
   },
   "shape": "tall",
   "dur": 14,
